@@ -2,10 +2,19 @@ var colorArray = ["red", "yellow", "blue", "green"];
 var gamePattern = [];
 var userClickedPattern = [];
 var level = 1;
+var started = false;
 
-$("body").keydown(nextSequence);
+// $(document).one("keypress", function () {
+//   $("#level-title").text("Level " + level);
+//   nextSequence();
+// });
 $(".btn").click(handleClick);
-$(".restart").click(nextSequence);
+$("#level-title").click(function () {
+  if (!started) {
+    setTimeout(nextSequence, 500);
+    started = true;
+  }
+});
 
 function nextSequence() {
   userClickedPattern = [];
@@ -48,7 +57,8 @@ function checkAnswer(gameLevel) {
 function startover() {
   gamePattern = [];
   level = 1;
-  $(".container").append("<button class='restart'>Restart</button>");
+  started = false;
+  $("#level-title").text("Press Me To restart");
 }
 function animatePress(buttonColor) {
   $("#" + buttonColor).addClass("pressed");
