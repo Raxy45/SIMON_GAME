@@ -63,11 +63,10 @@ footer {
 
 @media (max-width: 726px) {
   .btn {
-    margin: 10px;
+    margin: 0px;
     height: 86px;
     width: 86px;
-    border: 10px solid black;
-    border-radius: 10%;
+    border: 5px solid black;
   }
   .btn-close {
     padding: 5px 2.5px;
