@@ -73,8 +73,20 @@ footer {
   }
   footer {
     margin-bottom: 5%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   #level-title {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     height: 70px;
     font-size: 1.85rem;
     margin: 4% 5%;
