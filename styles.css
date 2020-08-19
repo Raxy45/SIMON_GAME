@@ -1,55 +1,55 @@
 body {
   text-align: center;
+  font-family: "Press Start 2P", cursive;
   background-color: #011f3f;
-}
-
-#level-title {
-  font-family: "Press Start 2P", cursive;
-  font-size: 2.85rem;
-  margin: 4% 5%;
   color: #fef2bf;
 }
-.simon-rules {
-  font-family: "Press Start 2P", cursive;
-  font-size: 1rem;
-  margin: 5%;
-  color: #fef2bf;
-  text-decoration: none;
-  text-align: center;
-}
-footer {
-  font-family: "Press Start 2P", cursive;
-  font-size: 1rem;
-  margin: 5%;
-  color: #fef2bf;
-  text-decoration: none;
-  text-align: center;
-  margin-top: 1%;
-}
-.container {
-  display: block;
-  width: 50%;
-  margin: auto;
-}
-
 .btn {
-  margin: 25px;
+  margin: 3px 0px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 210px;
+  width: 210px;
   border: 10px solid black;
   border-radius: 20%;
+  padding: 0px;
 }
-
+.btn-close:nth-child(odd) {
+  text-align: right;
+}
+.btn-close:nth-child(even) {
+  text-align: left;
+}
+.btn-close {
+  padding: 7px 10.5px;
+}
+footer {
+  font-size: 1rem;
+  margin: 0 0 1% 0;
+}
 .game-over {
   background-color: red;
   opacity: 0.8;
 }
-
+#level-title {
+  font-size: 2.85rem;
+  margin: 2% 5%;
+}
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.simon-rules {
+  color: #fef2bf;
+  text-decoration: none;
+}
+.simon-rules:hover {
+  color: red;
+  text-decoration: none;
+}
+/*****************************************colors*****************************************/
 .red {
   background-color: red;
 }
-
 .green {
   background-color: green;
 }
@@ -57,12 +57,26 @@ footer {
 .blue {
   background-color: blue;
 }
-
 .yellow {
   background-color: yellow;
 }
 
-.pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
+@media (max-width: 726px) {
+  .btn {
+    margin: 0px 0px;
+    height: 86px;
+    width: 86px;
+    border: 5px solid black;
+  }
+  .btn-close {
+    padding: 5px 2.5px;
+  }
+  footer {
+    margin-bottom: 5%;
+  }
+  #level-title {
+    height: 70px;
+    font-size: 1.85rem;
+    margin: 4% 5%;
+  }
 }
