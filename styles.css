@@ -4,6 +4,7 @@ body {
   background-color: #011f3f;
   color: #fef2bf;
 }
+
 .btn {
   margin: 3px 0px;
   display: inline-block;
@@ -31,8 +32,14 @@ footer {
   opacity: 0.8;
 }
 #level-title {
+  background-color: #011f3f;
+  color: #fef2bf;
+  border: 1px solid;
   font-size: 2.85rem;
   margin: 2% 5%;
+}
+#level-title:hover {
+  box-shadow: 0 0 20px white;
 }
 .pressed {
   box-shadow: 0 0 20px white;
@@ -75,7 +82,7 @@ footer {
     margin-bottom: 5%;
   }
   #level-title {
-    height: 70px;
+    height: 95px;
     font-size: 1.85rem;
     margin: 4% 5%;
   }

@@ -4,10 +4,6 @@ var userClickedPattern = [];
 var level = 1;
 var started = false;
 
-// $(document).one("keypress", function () {
-//   $("#level-title").text("Level " + level);
-//   nextSequence();
-// });
 $(".btn").click(handleClick);
 $("#level-title").click(function () {
   if (!started) {
@@ -18,7 +14,7 @@ $("#level-title").click(function () {
 
 function nextSequence() {
   userClickedPattern = [];
-  $("h1").text("Level " + level);
+  $("#level-title").text("Level " + level);
   var randomNumber = Math.floor(Math.random() * 4);
   var randomColor = colorArray[randomNumber];
   gamePattern.push(randomColor);
